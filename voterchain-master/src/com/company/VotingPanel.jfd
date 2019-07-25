@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:158:p, par l {seq {comp button1:::p:100:p, space ::105:x, comp button2:::p::p, space :p:9:p}, seq {par t:::p {comp checkBox8::::82:x, comp checkBox5::::82:x, comp checkBox6::::82:x, comp checkBox1::::82:x}, par l {par l {par l {par l {seq {space :::x, comp checkBox3:::p:129:p}, seq l {space :p:12:p, comp textField1:::p:196:p, space :0:0:x}}, seq t {space :p:114:p, comp checkBox2:::p:129:p}}, seq t {space :p:114:p, comp checkBox4:::p:129:p}}, seq t {space :p:114:p, comp checkBox7:::p:129:p}}}}, space :p:200:p}, seq l {space :p:249:p, comp button3:::p:152:p, space ::282:x}}"
+			"$verticalGroup": "par l {seq l {space :p:22:p, comp textField1:::p:30:p, space :p:43:p, par t {comp checkBox3:::p::p, comp checkBox1:::p::p}, space :p:26:p, par l {comp checkBox2:::p::p, comp checkBox6:::p::p}, space :p:27:p, par l {comp checkBox4:::p::p, comp checkBox5:::p::p}, space s:::p, par l {comp checkBox7:::p::p, comp checkBox8:::p::p}, space :p:30:p, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:30:p, comp button3:::p:39:p, space ::36:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": "YSRCP"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox2"
+				"text": "JANA SENA"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox3"
+				"text": "BJP"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox5"
+				"text": "TDP"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox6"
+				"text": "TRS"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox4"
+				"text": "CONGRESS"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox7"
+				"text": "NOTA"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox8"
+				"text": "AAP"
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "VOTE"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "MINE BLOCK"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "VIEW RESULTS"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewResults", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 685, 455 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 471 )
+		} )
+	}
+}
